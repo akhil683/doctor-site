@@ -9,10 +9,10 @@ const Hero = () => {
          <h1 className='font-semibold text-center max-md:text-3xl'>Nurturing Your Well-being: <br /> Discover Our Programs <br /> Ecosystem <span className='text-orange'>.</span></h1>
          <p className='mt-2 md:text-base text-sm text-gray text-center'>Discover Healthier Living: Explore Our Tailored Lifestyle and Wellness Programs.</p>
          <div className='flex justify-center max-md:flex-col items-center gap-4 mt-6'>
-            <button className='w-[200px] py-4 md:text-xl text-base bg-orange rounded-full text-white'>
+            <button className='md:w-[200px] w-[180px] py-3 md:text-xl text-base bg-orange hover:bg-lightOrange rounded-full text-white duration-200'>
                Talk to Us
             </button>
-            <button className='w-[200px] py-4 md:text-xl text-base border border-orange rounded-full text-orange'>
+            <button className='md:w-[200px] w-[180px] py-3 md:text-xl text-base border border-orange hover:bg-orange hover:text-white duration-200 rounded-full text-orange'>
                Know More
             </button>
          </div>

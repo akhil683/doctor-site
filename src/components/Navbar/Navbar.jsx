@@ -9,11 +9,11 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='fixed w-full z-40 bg-white h-[80px] border-b border-gray flex md:justify-around justify-between items-center md:px-20 px-4'>
+    <nav className='fixed w-full z-40 bg-white md:h-[80px] h-[70px] border-b border-lightGray flex md:justify-around justify-between items-center md:px-20 px-4'>
 
       <div className='flex justify-center items-center gap-4'>
         <h2 className='md:text-3xl text-2xl font-semibold text-orange'>App Name</h2>
-        <button className='py-2 px-6 border border-gray-300 md:text-xl rounded-full text-sm'>
+        <button className='py-2 px-6 border border-lightGray md:text-lg rounded-full text-sm'>
           For Doctors
         </button>
       </div>  
