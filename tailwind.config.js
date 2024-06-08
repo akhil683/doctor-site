@@ -24,6 +24,15 @@ export default {
         'blue': '0 1px 20px rgba(63, 0, 255, 0.25)',
       },
     extend: {
+      animation: {
+        image: "spin 3s ease-in-out infinite",
+      },
+      keyframes: {
+        spin: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(20px)" },
+        },
+      },
     },
   },
   plugins: [],

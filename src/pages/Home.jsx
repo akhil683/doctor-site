@@ -15,7 +15,7 @@ const Home = () => {
     <>
       <Hero />
       <Programs /> 
-      <Carousel />
+      {/* <Carousel /> */}
       <Care />
       <Operate />
 
