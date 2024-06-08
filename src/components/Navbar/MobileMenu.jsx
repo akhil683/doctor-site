@@ -22,9 +22,9 @@ const MobileMenu = ({ showMenu, toggleMenu }) => {
           <p className="text-3xl font-semibold text-orange font-semiboldo">App Name</p>
         </div>
 
-        {/* <hr className="bg-lightGray my-8" /> */}
+        <hr className="bg-lightGray my-8" />
 
-        <ul className=" pl-4 font-semibold text-gray text-xl flex flex-col gap-6 mt-16">
+        <ul className=" pl-4 font-semibold text-gray text-xl flex flex-col gap-6">
             <li>Our Clinics</li>
             <li>Programs</li>
             <li>Health Tracking</li>

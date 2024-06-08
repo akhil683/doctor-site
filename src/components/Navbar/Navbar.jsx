@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { IoIosMenu } from "react-icons/io";
 import MobileMenu from './MobileMenu';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [ showMenu, setShowMenu] = useState(false)
@@ -9,10 +10,12 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='fixed w-full z-40 bg-white md:h-[80px] h-[70px] border-b border-lightGray flex md:justify-around justify-between items-center md:px-20 px-4'>
+    <nav className='fixed w-full z-40 bg-white md:h-[75px] h-[65px] border-b border-lightGray flex md:justify-around justify-between items-center md:px-20 px-4'>
 
       <div className='flex justify-center items-center gap-4'>
-        <h2 className='md:text-3xl text-2xl font-semibold text-orange'>App Name</h2>
+        <h2 className='md:text-3xl text-2xl font-semibold text-orange'>
+          App Name
+        </h2>
         <button className='py-2 px-6 border border-lightGray md:text-lg rounded-full text-sm'>
           For Doctors
         </button>

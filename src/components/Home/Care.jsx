@@ -4,7 +4,7 @@ import careImg from "../../assets/accessibleCare.png"
 const Care = () => {
    
   return (
-    <section className='py-12 flex max-md:flex-col md:justify-center items-center gap-16 px-8'>
+    <section className='mt-6 py-12 flex max-md:flex-col md:justify-center items-center gap-16 px-8'>
       <div className='md:h-[350px] max-md:w-full p-2'>
          <img src={careImg} alt="Accessible Care" className='h-full w-full object-cover' />
       </div>

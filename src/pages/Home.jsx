@@ -6,13 +6,16 @@ import Care from '../components/Home/Care'
 import Operate from '../components/Home/Operate'
 import Panchakosha from '../components/Home/Panchakosha'
 import PreventiveCare from '../components/Home/PreventiveCare'
+import BloodPressure from '../components/Home/BloodPressure'
+import DigitalVault from '../components/Home/DigitalVault'
+import BookAppointment from '../components/Home/BookAppointment'
 
 const Home = () => {
   return (
     <>
       <Hero />
-      {/* <Carousel /> */}
       <Programs /> 
+      <Carousel />
       <Care />
       <Operate />
 
@@ -32,6 +35,9 @@ const Home = () => {
       <p className='text-gray mt-4 text-center'>Transform Your Well-being Holistically and Embark on a transformative journey like never before</p>
 
       <PreventiveCare />
+      <BloodPressure />
+      <DigitalVault />
+      <BookAppointment />
     </>
   )
 }
