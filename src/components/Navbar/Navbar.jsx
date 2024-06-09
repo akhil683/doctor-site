@@ -10,28 +10,39 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='fixed w-full z-40 bg-white md:h-[75px] h-[65px] border-b border-lightGray flex md:justify-around justify-between items-center md:px-20 px-4'>
+    <nav className='fixed top-0 w-full z-40 bg-white md:h-[75px] h-[65px] border-b border-lightGray flex md:justify-around justify-between items-center md:px-20 px-4'>
 
       <div className='flex justify-center items-center gap-4'>
-        <h2 className='md:text-3xl text-2xl font-semibold text-orange'>
-          App Name
-        </h2>
+        <Link to="/">
+          <h2 className='md:text-3xl text-2xl font-semibold text-orange'>
+            App Name
+          </h2>
+        </Link> 
+        
         <button className='py-2 px-6 border border-lightGray md:text-lg rounded-full text-sm'>
           For Doctors
         </button>
       </div>  
       <ul className='flex justify-center max-md:hidden items-center gap-6 text-xl text-gray'>
         <li className='hover:text-black'>
-          Our Clinics
+          <Link>
+            Our Clinics
+          </Link>
         </li>
         <li className='hover:text-black'>
-          Programs
+          <Link>
+            Programs
+          </Link>
         </li>
         <li className='hover:text-black'>
-          Health Tracking
+          <Link>
+            Health Tracking
+          </Link>
         </li>
         <li className='hover:text-black'>
-          Locker
+          <Link>
+            Locker
+          </Link>
         </li>
       </ul>
 

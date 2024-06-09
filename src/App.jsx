@@ -1,15 +1,15 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import Home from './pages/Home'
+import { Outlet } from 'react-router-dom'
 
 const App = () => {
   return (
   <>
   <Navbar />
-   <main>
-      <Home />
-   </main>
+    <main>
+      <Outlet />
+    </main>
    <Footer />
   </> 
   )

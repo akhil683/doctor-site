@@ -10,7 +10,7 @@ const defaultOption = options[0];
       options={options} 
       value={defaultOption} 
       placeholder="Select an option" 
-      className='md:w-[250px] w-[150px]'
+      className='w-[250px]'
       controlClassName='bg-bgWhite rounded-lg'
    />
   )

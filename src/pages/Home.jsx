@@ -14,6 +14,7 @@ import HealthID from '../components/Home/HealthID'
 import Doctor from '../components/Home/Doctor'
 
 const Home = () => {
+
   return (
     <>
       <Hero />

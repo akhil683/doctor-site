@@ -64,7 +64,7 @@ const handleChange = (e) => {
          />
          </div>
         <div className='flex justify-between flex-wrap gap-6'>
-         <div className='flex gap-6'>
+         <div className='flex gap-6 flex-wrap'>
             <DropDown options={options} /> 
             <DropDown options={gender} /> 
          </div> 
@@ -77,7 +77,7 @@ const handleChange = (e) => {
             className='p-3 rounded-lg placeholder:text-gray bg-bgWhite focus:bg-white outline-gray border border-lightGray text-lg'
          /> 
          </div> 
-         <button className='absolute bottom-6 right-6 py-4 px-6 text-xl hover:bg-orange bg-black duration-200 rounded-full text-white'>Book Appointment</button>
+         <button className='absolute bottom-6 right-6 py-4 px-6 md:text-xl text-lg hover:bg-orange bg-black duration-200 rounded-full text-white'>Book Appointment</button>
       </form> 
       </FramerUp>
     </section>

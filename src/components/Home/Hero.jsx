@@ -2,6 +2,7 @@ import React from 'react'
 import heroImg from '../../assets/hero.png'
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
+import { Link } from 'react-router-dom'
 
 const Hero = () => {
 
@@ -19,9 +20,11 @@ const Hero = () => {
             <button className='md:w-[200px] w-[180px] py-3 md:text-xl text-base bg-orange hover:bg-lightOrange rounded-full text-white duration-200'>
                Talk to Us
             </button>
+            <Link to="/features">
             <button className='md:w-[200px] w-[180px] py-3 md:text-xl text-base border border-orange hover:bg-orange hover:text-white duration-200 rounded-full text-orange'>
                Know More
             </button>
+            </Link>
          </div>
          </FramerUp> 
       </div>

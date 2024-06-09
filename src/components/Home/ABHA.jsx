@@ -6,7 +6,7 @@ import FramerUp from '../Framer/FramerUp'
 const ABHA = () => {
 
   return (
-      <section className='flex justify-around items-center max-md:flex-col gap-1 px-8 my-20'>
+      <section className='flex justify-around items-center max-md:flex-col gap-12 px-8 my-20'>
       <div className='relative md:h-[600px] p-3 bg-black max-md:w-full md:rounded-[50px] rounded-[60px]'>
          <div className='absolute w-[100px] h-[25px] bg-black left-[calc(50%-50px)] rounded-full top-0'></div>
          <img src={img} alt="Preventive Care Programs" className='h-full w-full object-cover]' />
