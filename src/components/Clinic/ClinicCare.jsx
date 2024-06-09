@@ -1,18 +1,19 @@
+
 import React from 'react'
 import careImg from "../../assets/accessibleCare.png"
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
 
-const Care = ({ flex }) => {
+const ClinicCare = () => {
    
   return (
-    <section className='mt-6 py-12 flex max-md:flex-col md:justify-center items-center gap-16 px-8'>
+    <section className='mt-16 py-12 flex flex-col md:justify-center items-center gap-16 px-8'>
       
-      <div className='md:h-[350px] max-md:w-full p-2'>
+      <div className='w-full p-2'>
          <img src={careImg} alt="Accessible Care" className='h-full w-full object-cover animate-image' />
       </div>
 
-      <div className='max-w-[500px]'>
+      <div className='text-center'>
         <FramerDown>
           <h3 className='md:text-5xl text-3xl font-semibold mb-6 leading-tight'><span className='text-orange'>Accessible Care Anywhere:</span> Our Network of Remote Clinics Bringing Quality Healthcare to Your Doorstep</h3>
         </FramerDown>
@@ -25,4 +26,4 @@ const Care = ({ flex }) => {
   )
 }
 
-export default Care
+export default ClinicCare

@@ -1,27 +1,26 @@
 import React from 'react'
-import diabetesImg from '../../assets/health-score.png'
-import { IoIosCheckmarkCircle } from 'react-icons/io'
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
+import centerImg from "../../assets/advantages.png"
+import { IoIosCheckmarkCircle } from 'react-icons/io'
 
-const Diabetes = () => {
+const RemoteCenter = () => {
   return (
-    <section className='my-16 flex justify-around items-center max-md:flex-col gap-12 px-8'>
-      <div className='md:h-[900px] max-md:w-full'>
-         <img src={diabetesImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+    <section className='my-16 flex justify-around items-center max-md:flex-col gap-16 px-8'>
+      <div className='md:max-h-[400px] max-md:w-full'>
+         <img src={centerImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
       </div>
       <div className='max-w-[500px]'>
          <FramerDown>
             <h3 className='md:text-5xl text-3xl font-semibold mb-6'>
-               Personalized coaching that helps you manage 
-               <span className='text-orange'> diabetes </span>
-               
+               <span className='text-orange'>Advantages of Opting for Our Remote Centers: </span>
+               Accessible Healthcare, Expert Specialists, and Advanced Facilities for Improved Well-being.
             </h3>
          </FramerDown>
 
          <FramerUp>
          <p className='mb-12 text-gray md:text-lg'>
-            Experienced diabetes management was made easy through our personalised coaching. Our tailored approach ensures you navigate diabetes with confidence and ease. Join us today for a stress-free journey towards better health.
+            Experience comprehensive healthcare at our remote centers, where you can access top-notch medical expertise, advanced diagnostic facilities, and hassle-free services for your overall well-being and convenience.
          </p>
          </FramerUp>
          <FramerUp>
@@ -31,10 +30,10 @@ const Diabetes = () => {
                </div> 
                <div>
                   <h4 className='md:text-2xl text-xl font-semibold'>
-                     Building the foundation for a healthy body
+                     Expert Superspecialists
                   </h4>    
                   <p className='text-gray'>
-                     Taking essential steps and making mindful choices to establish a solid groundwork that promotes a state of overall well-being and physical health.
+                     Access renowned specialists catering to diverse healthcare needs with personalized care and expert guidance for all medical concerns and queries.
                   </p>
                </div> 
             </div>    
@@ -46,10 +45,10 @@ const Diabetes = () => {
                </div> 
                <div>
                   <h4 className='md:text-2xl text-xl font-semibold'>
-                     Remodeling
+                     Convenient Services
                   </h4>    
                   <p className='text-gray'>
-                     Receive a carefully designed plan that is personalized to your needs and assimilates easily into your daily life.
+                     Enjoy seamless access to integrated facilities including an in-house pharmacy and advanced pathology services for efficient healthcare delivery and hassle-free medical assistance.
                   </p>
                </div> 
             </div>    
@@ -62,10 +61,10 @@ const Diabetes = () => {
                </div> 
                <div>
                   <h4 className='md:text-2xl text-xl font-semibold'>
-                     Personalized Treatment Plan
+                     Teleconsultation Options
                   </h4>    
                   <p className='text-gray'>
-                     A tailored and individualised healthcare strategy designed to address specific needs and conditions, ensuring the most effective and customised approach to treatment and recovery.
+                     Avail the benefits of virtual consultations, enabling easy access to doctors remotely, ensuring timely guidance and support for your healthcare needs from the comfort of your home.
                   </p>
                </div> 
             </div>    
@@ -77,4 +76,4 @@ const Diabetes = () => {
   )
 }
 
-export default Diabetes
+export default RemoteCenter

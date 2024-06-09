@@ -5,7 +5,7 @@ import HeroImg from "../../assets/hero.png"
 
 const Hero = () => {
   return (
-    <section className='mt-[75px] flex justify-center items-center flex-col gap-2'>
+    <section className='mt-[75px] flex justify-center items-center flex-col'>
       <div className='max-w-[600px] px-12'>
          <FramerDown>
          <h2 className='sm:text-5xl text-3xl font-semibold text-center mt-16'>

@@ -9,7 +9,7 @@ import { IoIosCheckmarkCircle } from "react-icons/io";
 const DietPlan = () => {
 
   return (
-    <section className='my-16 flex justify-around items-center max-md:flex-col-reverse gap-16 px-8'>
+    <section className='my-16 flex justify-around items-center max-md:flex-col-reverse gap-12 px-8'>
       <div className='max-w-[550px]'>
          <FramerDown>
             <h3 className='md:text-5xl text-3xl font-semibold mb-6'>

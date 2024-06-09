@@ -1,27 +1,27 @@
 import React from 'react'
-import diabetesImg from '../../assets/health-score.png'
-import { IoIosCheckmarkCircle } from 'react-icons/io'
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
+import fitnessImg from "../../assets/fitness.png"
+import { IoIosCheckmarkCircle } from 'react-icons/io'
 
-const Diabetes = () => {
+const Fitness = () => {
   return (
     <section className='my-16 flex justify-around items-center max-md:flex-col gap-12 px-8'>
       <div className='md:h-[900px] max-md:w-full'>
-         <img src={diabetesImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={fitnessImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
       </div>
       <div className='max-w-[500px]'>
          <FramerDown>
             <h3 className='md:text-5xl text-3xl font-semibold mb-6'>
-               Personalized coaching that helps you manage 
-               <span className='text-orange'> diabetes </span>
-               
+               Unlock Your Best Self with Today's 
+               <span className='text-orange'> Fitness </span>
+               Classes.
             </h3>
          </FramerDown>
 
          <FramerUp>
          <p className='mb-12 text-gray md:text-lg'>
-            Experienced diabetes management was made easy through our personalised coaching. Our tailored approach ensures you navigate diabetes with confidence and ease. Join us today for a stress-free journey towards better health.
+            Dive into the latest fitness trends and sculpt a healthier, happier version of yourself with our trending fitness classes
          </p>
          </FramerUp>
          <FramerUp>
@@ -31,10 +31,10 @@ const Diabetes = () => {
                </div> 
                <div>
                   <h4 className='md:text-2xl text-xl font-semibold'>
-                     Building the foundation for a healthy body
+                     Elite Coaches
                   </h4>    
                   <p className='text-gray'>
-                     Taking essential steps and making mindful choices to establish a solid groundwork that promotes a state of overall well-being and physical health.
+                     Experience the best-in-class coaching with expert guidance and unwavering motivation to reach your goals.
                   </p>
                </div> 
             </div>    
@@ -46,10 +46,10 @@ const Diabetes = () => {
                </div> 
                <div>
                   <h4 className='md:text-2xl text-xl font-semibold'>
-                     Remodeling
+                     Personalized Fitness Plans
                   </h4>    
                   <p className='text-gray'>
-                     Receive a carefully designed plan that is personalized to your needs and assimilates easily into your daily life.
+                     Discover personalised diet and workout plans designed specifically for you, aligning with your individual fitness objectives. Achieve your goals with expert guidance and a customised approach to health and wellness.
                   </p>
                </div> 
             </div>    
@@ -62,10 +62,10 @@ const Diabetes = () => {
                </div> 
                <div>
                   <h4 className='md:text-2xl text-xl font-semibold'>
-                     Personalized Treatment Plan
+                     Better Health Insights
                   </h4>    
                   <p className='text-gray'>
-                     A tailored and individualised healthcare strategy designed to address specific needs and conditions, ensuring the most effective and customised approach to treatment and recovery.
+                     Gain valuable insights for staying on course and enhancing your health routine, ensuring a successful path to wellness.
                   </p>
                </div> 
             </div>    
@@ -77,4 +77,4 @@ const Diabetes = () => {
   )
 }
 
-export default Diabetes
+export default Fitness

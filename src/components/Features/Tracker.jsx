@@ -1,27 +1,22 @@
 import React from 'react'
-import diabetesImg from '../../assets/health-score.png'
-import { IoIosCheckmarkCircle } from 'react-icons/io'
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
+import { IoIosCheckmarkCircle } from 'react-icons/io'
+import healthImg from "../../assets/health-track.png"
 
-const Diabetes = () => {
+const Tracker = () => {
   return (
-    <section className='my-16 flex justify-around items-center max-md:flex-col gap-12 px-8'>
-      <div className='md:h-[900px] max-md:w-full'>
-         <img src={diabetesImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
-      </div>
-      <div className='max-w-[500px]'>
+    <section className='my-16 flex justify-around items-center max-md:flex-col-reverse gap-12 px-8'>
+      <div className='max-w-[550px]'>
          <FramerDown>
             <h3 className='md:text-5xl text-3xl font-semibold mb-6'>
-               Personalized coaching that helps you manage 
-               <span className='text-orange'> diabetes </span>
-               
+               Revamp Your Fitness Journey with our Real-Time Workout Tracker: Monitor and Maximise Your Progress!
             </h3>
          </FramerDown>
 
          <FramerUp>
-         <p className='mb-12 text-gray md:text-lg'>
-            Experienced diabetes management was made easy through our personalised coaching. Our tailored approach ensures you navigate diabetes with confidence and ease. Join us today for a stress-free journey towards better health.
+         <p className=' mb-12 text-gray md:text-lg'>
+            Optimise your fitness routine for maximum effectiveness and gains.
          </p>
          </FramerUp>
          <FramerUp>
@@ -31,10 +26,10 @@ const Diabetes = () => {
                </div> 
                <div>
                   <h4 className='md:text-2xl text-xl font-semibold'>
-                     Building the foundation for a healthy body
+                     Stay motivated with our cutting-edge Real-Time Fitness Tracker.
                   </h4>    
                   <p className='text-gray'>
-                     Taking essential steps and making mindful choices to establish a solid groundwork that promotes a state of overall well-being and physical health.
+                     Fuel your fitness journey with unwavering motivation, thanks to our state-of-the-art Real-Time Fitness Tracker, designed to keep you inspired and on track
                   </p>
                </div> 
             </div>    
@@ -46,10 +41,10 @@ const Diabetes = () => {
                </div> 
                <div>
                   <h4 className='md:text-2xl text-xl font-semibold'>
-                     Remodeling
+                     Effortlessly monitor your workouts and see immediate results.
                   </h4>    
                   <p className='text-gray'>
-                     Receive a carefully designed plan that is personalized to your needs and assimilates easily into your daily life.
+                     Effortlessly keep tabs on your exercise routines and witness instant progress, empowering you to achieve your fitness goals with confidence.
                   </p>
                </div> 
             </div>    
@@ -62,10 +57,10 @@ const Diabetes = () => {
                </div> 
                <div>
                   <h4 className='md:text-2xl text-xl font-semibold'>
-                     Personalized Treatment Plan
+                     Optimise your fitness routine for maximum effectiveness and gains
                   </h4>    
                   <p className='text-gray'>
-                     A tailored and individualised healthcare strategy designed to address specific needs and conditions, ensuring the most effective and customised approach to treatment and recovery.
+                     Unlock the full potential of your fitness regimen, fine-tuning it for ultimate effectiveness and exceptional gains in your health and well-being.
                   </p>
                </div> 
             </div>    
@@ -73,8 +68,11 @@ const Diabetes = () => {
          
       </div>
 
+      <div className='md:h-[900px] max-md:w-full'>
+         <img src={healthImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+      </div>
     </section>
   )
 }
 
-export default Diabetes
+export default Tracker

@@ -20,7 +20,7 @@ const Carousel = () => (
          delay: 2000,
          disableOnInteraction: false,
       }}
-      speed={1000}
+      speed={500}
       loop={true}
       effect={'fade'}
       navigation={{
@@ -28,7 +28,7 @@ const Carousel = () => (
          prevEl: '.prev',
       }}
       modules={[EffectFade, Navigation, Pagination, Autoplay]}
-      className="mySwiper md:h-[500px] h-[300px]"
+      className="mySwiper md:h-[500px] h-[250px] my-12"
    >
       <div className='prev'><GrFormPrevious /></div>
       <div className='next'><GrFormNext /></div>

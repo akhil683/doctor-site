@@ -25,12 +25,12 @@ const Navbar = () => {
       </div>  
       <ul className='flex justify-center max-md:hidden items-center gap-6 text-xl text-gray'>
         <li className='hover:text-black'>
-          <Link>
+          <Link to="/our-clinics">
             Our Clinics
           </Link>
         </li>
         <li className='hover:text-black'>
-          <Link>
+          <Link to="/features">
             Programs
           </Link>
         </li>

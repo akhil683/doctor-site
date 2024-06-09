@@ -5,6 +5,9 @@ import Home from "./pages/Home.jsx"
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Features from './pages/Features.jsx'
+import OurClinics from './pages/OurClinics.jsx'
+import Locker from './pages/Locker.jsx'
+import Tracking from './pages/Tracking.jsx'
 
 const router = createBrowserRouter([
   {
@@ -18,7 +21,19 @@ const router = createBrowserRouter([
       {
         path: "/features",
         element: <Features />
-      }
+      },
+      {
+        path: "/our-clinics",
+        element: <OurClinics />
+      },
+      {
+        path: "/health-tracking",
+        element: <Tracking/>
+      },
+      {
+        path: "/locker",
+        element: <Locker />
+      },
     ]
   }
 ])
