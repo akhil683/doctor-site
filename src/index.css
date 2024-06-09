@@ -17,3 +17,37 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.prev, .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  color: #111;
+  position: absolute;
+  top: calc(50% - 30px);
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.7;
+}
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+   .prev, .next {
+      font-size: 30px;
+      height: 40px;
+      width: 40px;
+      top: calc(50% - 20px);
+   }
+}
+

@@ -2,13 +2,17 @@ import React, { useState } from 'react'
 import Input from '../Input'
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
+import DropDown from '../DropDown'
 
 const BookAppointment = () => {
+   const options = ["Diabetes Reversal", "Weight Loss", "Weight Gain", 'PCOD/PCOS Reversal']
+   const gender = ["Male", "Female", "Other"]
 
    const [ form, setForm ] = useState({
       name: "",
       email: "",
       number: "",
+      time: "" ,
    })
 
 const handleChange = (e) => {
@@ -18,25 +22,23 @@ const handleChange = (e) => {
   }
 
   return (
-    <section className='p-6 my-8 flex justify-center items-center max-md:flex-col gap-12 border border-lightGray mx-8'>
+    <section className='p-12 max-md:px-4 pb-20 my-8 border border-lightGray mx-8 relative'>
 
-     <div className='max-w-[450px]'>
          <FramerDown>
-         <h3 className='md:text-4xl text-3xl font-semibold mb-4'>
-            Book an Appointment
+         <h3 className='md:text-3xl text-2xl font-semibold mb-4'>
+            Book your Free Session Now !
          </h3>
          </FramerDown>
 
          <FramerUp>
-         <p className='mb-4 text-gray md:text-lg'>
+         <p className='text-gray md:text-lg'>
             Take your first step towards a healthier life. Book a free appointment now !
          </p>
          </FramerUp>
-      </div> 
 
       <FramerUp>
-      <form className='max-w-[500px] w-full flex gap-2 flex-col'>
-         <div className='flex gap-2 max-md:flex-col'>
+      <form className='my-12 w-full flex gap-6 flex-col'>
+         <div className='flex gap-6 max-md:flex-col'>
          <Input
             type="text"
             name="name"
@@ -52,6 +54,7 @@ const handleChange = (e) => {
             onChange={handleChange}
          />
          </div>
+         <div className='flex gap-6 max-md:flex-col'>
          <Input
             type="number"
             name="number"
@@ -59,7 +62,22 @@ const handleChange = (e) => {
             placeholder="Mobile Number"
             onChange={handleChange}
          />
-         <button className='py-4 text-xl hover:bg-orange bg-black duration-200 w-full rounded-lg  text-white'>Book Appointment</button>
+         </div>
+        <div className='flex justify-between flex-wrap gap-6'>
+         <div className='flex gap-6'>
+            <DropDown options={options} /> 
+            <DropDown options={gender} /> 
+         </div> 
+         <input
+            type='time' 
+            name='time'
+            value={form.time} 
+            placeholder='Preferred time to Call' 
+           onChange={handleChange} 
+            className='p-3 rounded-lg placeholder:text-gray bg-bgWhite focus:bg-white outline-gray border border-lightGray text-lg'
+         /> 
+         </div> 
+         <button className='absolute bottom-6 right-6 py-4 px-6 text-xl hover:bg-orange bg-black duration-200 rounded-full text-white'>Book Appointment</button>
       </form> 
       </FramerUp>
     </section>

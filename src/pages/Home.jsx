@@ -9,14 +9,17 @@ import PreventiveCare from '../components/Home/PreventiveCare'
 import BloodPressure from '../components/Home/BloodPressure'
 import DigitalVault from '../components/Home/DigitalVault'
 import BookAppointment from '../components/Home/BookAppointment'
+import ABHA from '../components/Home/ABHA'
+import HealthID from '../components/Home/HealthID'
+import Doctor from '../components/Home/Doctor'
 
 const Home = () => {
   return (
     <>
       <Hero />
       <Programs /> 
-      {/* <Carousel /> */}
       <Care />
+      <Carousel />
       <Operate />
 
       <h3 className='md:text-5xl text-xl font-semibold text-center md:my-20 my-6'>
@@ -37,6 +40,13 @@ const Home = () => {
       <PreventiveCare />
       <BloodPressure />
       <DigitalVault />
+      <ABHA />
+      <HealthID />
+      <Doctor />
+      <div className='my-12'>
+        <h3 className='md:text-5xl text-3xl font-semibold text-center'>Get in touch<span className='text-orange'>.</span></h3>
+        <p className='text-gray text-lg my-4 text-center px-4'>Fill the form and book an appointment with our experts to get instant feedback !</p>
+      </div>
       <BookAppointment />
     </>
   )

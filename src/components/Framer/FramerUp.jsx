@@ -13,7 +13,7 @@ const FramerUp = ({ children }) => {
   }, [isInView]);
 
   return (
-    <div ref={ref} className='relative'>
+    <div ref={ref}>
       <motion.div
         variants={{
           hidden: { y: 30 },

@@ -18,6 +18,7 @@ export default {
         'lightGray': '#d7d7d7',
         'bgWhite': '#f6f6f6',
         'black': '#000',
+        'checkGreen': '#29AB87'
       },
       dropShadow: {
         'orange': '0 35px 35px rgb(232 118 44)',
