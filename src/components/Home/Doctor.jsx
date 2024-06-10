@@ -7,7 +7,7 @@ import img from "../../assets/ehr-intro.png"
 const Doctor = () => {
 
   return (
-      <section className='flex justify-around items-center max-md:flex-col gap-1 px-8'>
+      <section className='flex justify-around items-center max-md:flex-col gap-4 px-8'>
       <div className='md:h-[380px] max-md:w-full'>
          <img src={img} alt="Health Record Systemj" className='h-full w-full object-cover animate-image' />
       </div>
@@ -23,7 +23,7 @@ const Doctor = () => {
             <p className='mb-4'>
                Enhance your practice with our cutting-edge Electronic Health Records (EHR) system. Digitize your clinic, streamline workflows, and provide top-notch care with DocPlix's innovative healthcare solutions tailored for doctors.
             </p>
-            <button className='px-8 py-3 text-lg rounded-full border border-lightOrange text-orange'>
+            <button className='px-8 py-3 md:text-lg rounded-full border border-lightOrange text-orange'>
                Know More
             </button>
          </FramerUp>

@@ -3,8 +3,13 @@ import Input from '../Input'
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
 import DropDown from '../DropDown'
+import { addDoc } from 'firebase/firestore'
+import { appointmentRef } from '../../firebase/firebase'
+import Swal from 'sweetalert2'
 
 const BookAppointment = () => {
+   const [ loading, setLoading ] = useState(false)
+
    const options = ["Diabetes Reversal", "Weight Loss", "Weight Gain", 'PCOD/PCOS Reversal']
    const gender = ["Male", "Female", "Other"]
 
@@ -14,6 +19,24 @@ const BookAppointment = () => {
       number: "",
       time: "" ,
    })
+   const submitForm = async (e) => {
+      e.preventDefault
+      try {
+         setLoading(true)
+         await addDoc(appointmentRef, form)
+         Swal.fire({
+            title: "Appointment Booked !",
+            icon: "success",
+         })
+         setLoading(false)
+      } catch (err) {
+         console.log(err)
+         Swal.fire({
+            title: "Error",
+            icon: "error",
+         })
+      }
+   } 
 
 const handleChange = (e) => {
     const name = e.target.name
@@ -37,7 +60,7 @@ const handleChange = (e) => {
          </FramerUp>
 
       <FramerUp>
-      <form className='my-12 w-full flex gap-6 flex-col'>
+      <form className='my-12 w-full flex gap-6 flex-col' onSubmit={(e) => submitForm(e)}>
          <div className='flex gap-6 max-md:flex-col'>
          <Input
             type="text"
@@ -77,7 +100,9 @@ const handleChange = (e) => {
             className='p-3 rounded-lg placeholder:text-gray bg-bgWhite focus:bg-white outline-gray border border-lightGray text-lg'
          /> 
          </div> 
-         <button className='absolute bottom-6 right-6 py-4 px-6 md:text-xl text-lg hover:bg-orange bg-black duration-200 rounded-full text-white'>Book Appointment</button>
+         <button className='absolute bottom-6 right-6 py-4 w-[220px] md:text-xl text-lg hover:bg-orange bg-black duration-200 rounded-full text-white'>
+            {loading ? "Loading..." : "Book Appointment"}
+         </button>
       </form> 
       </FramerUp>
     </section>
