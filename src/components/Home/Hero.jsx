@@ -22,7 +22,7 @@ const Hero = () => {
             </p>
          </FramerUp>
          <FramerUp>
-         <div className='flex justify-center max-md:flex-col items-center gap-4 mt-6'>
+         <div className='flex justify-center max-md:flex-col items-center gap-4 max-md:gap-2 mt-6'>
             <button className='md:w-[200px] w-[180px] py-3 md:text-xl text-base bg-orange hover:bg-lightOrange rounded-full text-white duration-200'>
                Talk to Us
             </button>

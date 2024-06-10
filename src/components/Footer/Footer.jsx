@@ -15,7 +15,22 @@ const Footer = () => {
       <div className='flex justify-between flex-wrap gap-16 md:px-16 py-16 text-xl'>
         <div>
           <p className='text-gray mb-6 text-lg'>Features</p>
-          <div className='mb-6'>
+          <div className='flex flex-col gap-4'>
+            <Link to="/our-clinics" className='text-lightGray hover:text-white'>
+              Our Clinics
+            </Link>
+            <Link to="/features" className='text-lightGray hover:text-white'>
+              Programs
+            </Link>
+            <Link to="/health-tracking" className='text-lightGray hover:text-white'>
+              Health Tracking
+            </Link>
+            <Link to="/locker" className='text-lightGray hover:text-white'>
+              Locker
+            </Link>
+          </div>
+
+          {/* <div className='mb-6'>
             <p className='mb-2'>Weight Management</p>   
             <Link to="/" className='px-6 text-lg text-lightGray hover:text-white duration-100'>Weight Loss</Link>
           </div>          
@@ -28,7 +43,7 @@ const Footer = () => {
           <div className='mb-4'>
             <p className='mb-2'>For doctors</p>   
             <Link to="/" className='px-6 text-lg text-lightGray hover:text-white duration-100'>Electronic Health Records</Link>
-          </div>          
+          </div>           */}
         </div>
         <div>
           <p className='mb-6 text-gray text-lg'>Company</p>

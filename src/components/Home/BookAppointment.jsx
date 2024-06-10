@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Input from '../Input'
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
-import DropDown from '../DropDown'
+// import DropDown from '../DropDown'
 import { addDoc } from 'firebase/firestore'
 import { appointmentRef } from '../../firebase/firebase'
 import Swal from 'sweetalert2'
@@ -10,21 +10,22 @@ import Swal from 'sweetalert2'
 const BookAppointment = () => {
    const [ loading, setLoading ] = useState(false)
 
-   const options = ["Diabetes Reversal", "Weight Loss", "Weight Gain", 'PCOD/PCOS Reversal']
-   const gender = ["Male", "Female", "Other"]
+   // const options = ["Diabetes Reversal", "Weight Loss", "Weight Gain", 'PCOD/PCOS Reversal']
+   // const gender = ["Male", "Female", "Other"]
 
    const [ form, setForm ] = useState({
       name: "",
       number: "",
-      time: "" ,
+      email: "",
    })
+
    const submitForm = async (e) => {
-      e.preventDefault
+      e.preventDefault()
       try {
          setLoading(true)
          await addDoc(appointmentRef, form)
          Swal.fire({
-            title: "Appointment Booked !",
+            title: "Demo Booked !",
             icon: "success",
          })
          setLoading(false)
@@ -59,7 +60,7 @@ const handleChange = (e) => {
          </FramerUp>
 
       <FramerUp>
-      <form className='my-12 w-full flex gap-6 flex-col' onSubmit={(e) => submitForm(e)}>
+      <form className='my-12 w-full flex gap-6 flex-col' onSubmit={submitForm}>
          <div className='flex gap-6 max-md:flex-col'>
          <Input
             type="text"
@@ -90,16 +91,16 @@ const handleChange = (e) => {
             {/* <DropDown options={options} /> 
             <DropDown options={gender} />  */}
          </div> 
-         <input
+         {/* <input
             type='time' 
             name='time'
             value={form.time} 
             placeholder='Preferred time to Call' 
            onChange={handleChange} 
             className='p-3 rounded-lg placeholder:text-gray bg-bgWhite focus:bg-white outline-gray border border-lightGray text-lg'
-         /> 
+         />  */}
          </div> 
-         <button className='absolute bottom-6 right-6 py-4 w-[220px] md:text-xl text-lg hover:bg-orange bg-black duration-200 rounded-full text-white'>
+         <button type='submit' className='absolute bottom-6 right-6 py-4 w-[220px] md:text-xl text-lg hover:bg-orange bg-black duration-200 rounded-full text-white'>
             {loading ? "Loading..." : "Book Demo"}
          </button>
       </form> 
