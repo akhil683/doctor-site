@@ -21,7 +21,7 @@ export default {
         'checkGreen': '#29AB87'
       },
       dropShadow: {
-        'orange': '0 35px 35px rgb(232 118 44)',
+        'orange': '0 10px 35px rgb(232 118 44)',
         'blue': '0 1px 20px rgba(63, 0, 255, 0.25)',
       },
     extend: {

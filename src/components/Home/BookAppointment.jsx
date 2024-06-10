@@ -15,7 +15,6 @@ const BookAppointment = () => {
 
    const [ form, setForm ] = useState({
       name: "",
-      email: "",
       number: "",
       time: "" ,
    })
@@ -49,7 +48,7 @@ const handleChange = (e) => {
 
          <FramerDown>
          <h3 className='md:text-3xl text-2xl font-semibold mb-4'>
-            Book your Free Session Now !
+            Book a Demo !
          </h3>
          </FramerDown>
 
@@ -88,8 +87,8 @@ const handleChange = (e) => {
          </div>
         <div className='flex justify-between flex-wrap gap-6'>
          <div className='flex gap-6 flex-wrap'>
-            <DropDown options={options} /> 
-            <DropDown options={gender} /> 
+            {/* <DropDown options={options} /> 
+            <DropDown options={gender} />  */}
          </div> 
          <input
             type='time' 
@@ -101,7 +100,7 @@ const handleChange = (e) => {
          /> 
          </div> 
          <button className='absolute bottom-6 right-6 py-4 w-[220px] md:text-xl text-lg hover:bg-orange bg-black duration-200 rounded-full text-white'>
-            {loading ? "Loading..." : "Book Appointment"}
+            {loading ? "Loading..." : "Book Demo"}
          </button>
       </form> 
       </FramerUp>

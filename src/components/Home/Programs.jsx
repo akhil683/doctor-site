@@ -11,26 +11,39 @@ const Programs = () => {
     <section className='mt-12 px-8 mb-32 flex justify-center items-center flex-col'>
 
       <FramerDown>
-         <h3 className=' font-semibold md:text-5xl text-3xl mb-4'>Our Programs<span className='text-orange'>.</span></h3>
+         <h3 className=' font-semibold md:text-5xl text-3xl mb-4 max-w-[600px] text-center'>
+            An easy way to manage all your patient Records
+            <span className='text-orange'>.</span></h3>
       </FramerDown>
 
       <FramerUp>
-         <p className='text-gray text-center max-md:text-sm'>Explore exclusive, tailor-made wellness programs at [App Name] for your well-being</p> 
+         <p className='text-gray text-center max-md:text-sm'>
+            Eliminate paperwork from your practice, Practice Medicine, Not Administration.
+            </p> 
       </FramerUp> 
 
       <FramerUp>
       <div className='flex flex-wrap font-Montserrat font-semibold justify-center items-center gap-6 mt-12'>
-         <button className='w-[300px] py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
-            <img src={weightLossImg} alt="weight loss program" className='w-10 h-10' />
-            Weight Loss
+         <button className='w-[250px] h-[150px] px-4 py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
+            Intuitive & Easy to User
          </button>
-         <button className='w-[300px] py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
-            <img src={DiabetesImg} alt="Diabetes program" className='w-10 h-10' />
-            Diabetes Reversal
+         <button className='w-[250px] h-[150px] px-4 py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
+            Multi Device
          </button>
-         <button className='w-[300px] py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
-            <img src={PCODImg} alt="PCOD program" className='w-10 h-10' />
-            PCOD/PCOS
+         <button className='w-[250px] h-[150px] px-4 py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
+            Easy appointment scheduling & Tracking
+         </button>
+         <button className='w-[250px] h-[150px] px-4 py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
+            E-Prescription
+         </button>
+         <button className='w-[250px] h-[150px] px-4 py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
+            Patient Engagement
+         </button>
+         <button className='w-[250px] h-[150px] px-4 py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
+            Real Time Sync
+         </button>
+         <button className='w-[250px] h-[150px] px-4 py-16 border border-lightGray rounded-lg text-lg flex justify-center items-center gap-4 shadow-2xl'>
+            Most Safe and Secure
          </button>
       </div>
       </FramerUp>

@@ -1,24 +1,27 @@
 import React from 'react'
-import img from "../../assets/pcp.png"
+import img from "../../assets/home/intuitive-app.png"
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
+import DemoButton from '../DemoButton'
 
 const PreventiveCare = () => {
   return (
-    <section className='mt-20 flex justify-around items-center max-md:flex-col-reverse gap-4 md:px-16 px-8'>
+    <section className='mt-20 flex justify-around items-center max-md:flex-col-reverse gap-8 md:px-16 px-8'>
+      <div className='md:h-[700px] max-md:w-full'>
+         <img src={img} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+      </div>
       <div className='max-w-[500px]'>
         <FramerDown>
-         <h3 className='md:text-3xl text-2xl font-semibold mb-4'>Preventive Care Programs</h3>
+         <h3 className='md:text-5xl text-3xl font-semibold mb-4'>
+          Intuitive App
+          </h3>
         </FramerDown>
         <FramerUp>
-         <p className='mb-4 text-gray'>Discover the Power of Preventive Care Programs - Proactive Health Solutions for a Better Tomorrow. Learn how our programs can keep you at your best.</p>
-         <button className='px-8 py-3 text-lg rounded-full border border-lightGray'>
-            Learn more 
-         </button>
+         <p className='mb-4 text-gray text-lg'>
+            Record & Access patient record with our intuitive mobile app, available on Ios and Android.
+          </p>
+          <DemoButton />
         </FramerUp>
-      </div>
-      <div className='md:h-[400px] max-md:w-full'>
-         <img src={img} alt="Preventive Care Programs" className='h-full w-full object-cover drop-shadow-blue animate-image' />
       </div>
     </section>
   )

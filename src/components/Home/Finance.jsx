@@ -1,27 +1,26 @@
 import React from 'react'
-import healthImg from '../../assets/home/ipd.png'
-import FramerUp from '../Framer/FramerUp'
 import FramerDown from '../Framer/FramerDown'
+import FramerUp from '../Framer/FramerUp'
 import DemoButton from '../DemoButton'
+import healthImg from "../../assets/home/accounting-finance.png"
 
-const HealthID = () => {
-
+const Finance = () => {
   return (
-      <section className='flex justify-around items-center max-md:flex-col-reverse gap-4 px-8 mb-20'>
+      <section className='flex justify-around items-center max-md:flex-col-reverse gap-16 px-8 my-20'>
       <div className='max-w-[600px]'>
          <img src={healthImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
       </div>
 
-      <div className='max-w-[500px]'>
+      <div className='max-w-[600px]'>
          <FramerDown>
             <h3 className='md:text-5xl text-3xl font-semibold mb-4'>
-               IPD
+               Account & Finance
             </h3>
          </FramerDown>
 
          <FramerUp>
             <p className='mb-4 text-gray'>
-               Manage IPD across all wings & departments. Transferring IPD from one wing to another is just a click away. Assigning Doctors and managing visiting consultants were never easy before
+               Generate multiple types of reports. Analyse the revenue of your clinic/hospital. An easy way to track all your financial performance.
             </p>
             <DemoButton />
          </FramerUp>
@@ -30,4 +29,4 @@ const HealthID = () => {
   )
 }
 
-export default HealthID
+export default Finance

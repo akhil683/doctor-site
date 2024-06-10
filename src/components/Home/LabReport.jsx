@@ -1,25 +1,21 @@
 import React from 'react'
-import FramerUp from '../Framer/FramerUp'
 import FramerDown from '../Framer/FramerDown'
-
-import img from "../../assets/home/patient-engagement.png"
+import FramerUp from '../Framer/FramerUp'
 import DemoButton from '../DemoButton'
-
-const Doctor = () => {
-
+import img from "../../assets/home/lab-reports-billing.png"
+const LabReport = () => {
   return (
       <section className='flex justify-around items-center max-md:flex-col gap-4 px-8'>
-
       <div className='max-w-[500px]'>
          <FramerDown>
             <h3 className='md:text-5xl text-3xl font-semibold mb-4'>
-               Patient Engagement
+               Lab Reports & Billing
             </h3>
          </FramerDown>
 
          <FramerUp>
             <p className='mb-4'>
-               Connect with your patient through our Bulk Message services. Filter target audience bases on Gender, Age and more with our unique user interface.
+               Make customise templates of lab reports and manage billing.
             </p>
             <DemoButton />    
          </FramerUp>
@@ -32,4 +28,4 @@ const Doctor = () => {
   )
 }
 
-export default Doctor
+export default LabReport

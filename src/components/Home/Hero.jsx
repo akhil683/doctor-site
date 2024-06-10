@@ -1,5 +1,5 @@
 import React from 'react'
-import heroImg from '../../assets/hero.png'
+import heroImg from '../../assets/ehr-intro.png'
 import FramerDown from '../Framer/FramerDown'
 import FramerUp from '../Framer/FramerUp'
 import { Link } from 'react-router-dom'
@@ -7,13 +7,19 @@ import { Link } from 'react-router-dom'
 const Hero = () => {
 
   return (
-    <section className='max-md:pt-[100px] text-5xl flex max-md:flex-col justify-center items-center min-h-screen max-md:gap-12 md:px-12'>
-      <div>
+    <section className='md:mt-[75px] text-5xl flex max-md:flex-col justify-center items-center min-h-screen gap-12 md:px-12'>
+      <div className='max-w-[500px]'>
          <FramerDown>
-            <h1 className='font-semibold text-center max-md:text-3xl'>Nurturing Your Well-being: <br /> Discover Our Programs <br /> Ecosystem <span className='text-orange'>.</span></h1>
+            <h1 className='font-semibold text-center max-md:text-3xl'>
+               Paper Records have their limitations
+               <span className='text-orange'> !</span>
+            </h1>
          </FramerDown>
          <FramerUp>
-            <p className='mt-2 px-4 md:text-base text-sm text-gray text-center'>Discover Healthier Living: Explore Our Tailored Lifestyle and Wellness Programs.</p>
+            <p className='mt-2 px-4 md:text-base text-sm text-gray text-center'>
+               We made practice mangement Simlplified, Organise & Digitise your practice with the most efficient
+               <span className='text-orange'> [App Name] EHR</span>
+            </p>
          </FramerUp>
          <FramerUp>
          <div className='flex justify-center max-md:flex-col items-center gap-4 mt-6'>
@@ -28,7 +34,7 @@ const Hero = () => {
          </div>
          </FramerUp> 
       </div>
-      <div className='relative md:h-[450px]'>
+      <div className='relative md:max-w-[650px]'>
          <img src={heroImg} alt="Hero Image" className='h-full object-cover drop-shadow-orange animate-image' />
       </div>
     </section>
