@@ -8,7 +8,7 @@ const Finance = () => {
   return (
       <section className='flex justify-around items-center max-md:flex-col-reverse gap-16 px-8 my-20'>
       <div className='max-w-[600px]'>
-         <img src={healthImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={healthImg} loading='lazy' alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
       </div>
 
       <div className='max-w-[600px]'>

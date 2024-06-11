@@ -8,7 +8,7 @@ const Fitness = () => {
   return (
     <section className='my-16 flex justify-around items-center max-md:flex-col gap-12 px-8'>
       <div className='md:h-[900px] max-md:w-full'>
-         <img src={fitnessImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={fitnessImg} loading='lazy' alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
       </div>
       <div className='max-w-[500px]'>
          <FramerDown>

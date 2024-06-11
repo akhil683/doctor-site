@@ -9,7 +9,7 @@ const BloodPressure = () => {
   return (
       <section className='flex justify-around items-center max-md:flex-col-reverse gap-4 px-8'>
       <div className='md:h-[500px] max-md:w-full'>
-         <img src={trackHealthImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={trackHealthImg} alt="Preventive Care Programs" loading='lazy' className='h-full w-full object-cover animate-image' />
       </div>
 
       <div className='max-w-[500px]'>

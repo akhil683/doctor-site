@@ -10,7 +10,7 @@ const ClinicCare = () => {
     <section className='mt-16 py-12 flex flex-col md:justify-center items-center gap-16 px-8'>
       
       <div className='w-full p-2'>
-         <img src={careImg} alt="Accessible Care" className='h-full w-full object-cover animate-image' />
+         <img src={careImg} loading='lazy' alt="Accessible Care" className='h-full w-full object-cover animate-image' />
       </div>
 
       <div className='text-center'>

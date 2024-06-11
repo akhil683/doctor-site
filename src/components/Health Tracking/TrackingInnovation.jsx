@@ -8,7 +8,7 @@ const TrackingInnovation = () => {
   return (
     <section className='my-16 flex justify-around items-center max-md:flex-col gap-16 px-8'>
       <div className='md:max-w-[600px] max-md:w-full'>
-         <img src={centerImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={centerImg} loading='lazy' alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
       </div>
       <div className='max-w-[500px]'>
          <FramerDown>

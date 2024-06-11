@@ -8,7 +8,7 @@ const PreventiveCare = () => {
   return (
     <section className='mt-20 flex justify-around items-center max-md:flex-col-reverse gap-8 md:px-16 px-8'>
       <div className='md:h-[700px] max-md:w-full'>
-         <img src={img} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={img} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' loading='lazy' />
       </div>
       <div className='max-w-[500px]'>
         <FramerDown>

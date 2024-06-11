@@ -24,7 +24,7 @@ const ABHA = () => {
       </div>
 
       <div className='max-w-[660px]'>
-         <img src={img} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={img} alt="Preventive Care Programs" loading='lazy' className='h-full w-full object-cover animate-image' />
       </div>
     </section>
   )

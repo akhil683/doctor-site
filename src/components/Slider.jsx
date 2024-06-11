@@ -2,11 +2,10 @@ import React from 'react'
 import ReactBeforeSlidercomponent from "react-before-after-slider-component"
 import 'react-before-after-slider-component/dist/build.css'
 
-import firstImg from "../assets/slider/3.png"
 
-const Slider = ({ imageTwo }) => {
+const Slider = ({ imageOne, imageTwo }) => {
    const FIRST_IMAGE = {
-      imageUrl: firstImg
+      imageUrl: imageOne
    }
    const SECOND_IMAGE = {
       imageUrl: imageTwo
@@ -18,7 +17,7 @@ const Slider = ({ imageTwo }) => {
       firstImage={FIRST_IMAGE} 
       secondImage={SECOND_IMAGE}
       delimiterColor='#e8762c'
-      className=''
+      className='w-full h-full object-cover'
    />
    </div>
   )

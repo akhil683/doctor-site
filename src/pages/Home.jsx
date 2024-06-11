@@ -20,7 +20,7 @@ import WhyUs from '../components/Home/WhyUs'
 import Slider from '../components/Slider'
 import hindiPrescription from "../assets/slider/1.png"
 import englishPrescription from "../assets/slider/2.png"
-
+import writtenPescription from "../assets/slider/3.png"
 const Home = () => {
   return (
     <>
@@ -30,33 +30,17 @@ const Home = () => {
       <div className='flex justify-around max-md:flex-col px-4 mt-16 mb-24 gap-16'>
         <div>
           <p className='md:text-3xl text-xl text-center mb-4'>In <span className='font-semibold'>English</span></p>
-          <Slider imageTwo={englishPrescription} />
+          <Slider imageOne={writtenPescription} imageTwo={englishPrescription} />
         </div>
         <div>
           <p className='md:text-3xl text-xl text-center mb-4'>In <span className='font-semibold'>Hindi</span></p>
-          <Slider imageTwo={hindiPrescription} />
+          <Slider imageOne={writtenPescription} imageTwo={hindiPrescription} />
         </div>
       </div>
       <Programs />
       <Care />
       <Carousel />
       <Operate />
-
-      {/* <h3 className='md:text-5xl text-xl font-semibold text-center md:my-20 my-6'>
-                  <span className='text-orange'>Endocrinologist-Led,</span>
-                  <br />
-                  AI-Powered Personalized Healthcare Programs
-                  <span className='text-orange'>.</span>
-                </h3> */}
-
-      {/* <Panchakosha /> */}
-
-      {/* <h3 className='md:text-5xl text-3xl text-center font-semibold md:px-24 px-8 mt-20'>
-        Unlocking the Future of Fitness: Dive into  Our Connected Ecosytsem
-        <span className='text-orange'>.</span>
-      </h3>
-      <p className='text-gray mt-4 text-center'>Transform Your Well-being Holistically and Embark on a transformative journey like never before</p> */}
-
       <PreventiveCare />
       <DigitalVault />
       <BloodPressure />

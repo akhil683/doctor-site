@@ -21,7 +21,7 @@ const Operate = () => {
 
       <FramerUp>
       <div className='max-w-[700px]'>
-        <img src={img} alt="patient record" className=' drop-shadow-blue' /> 
+        <img src={img} alt="patient record" className=' drop-shadow-blue' loading='lazy' /> 
       </div>
       </FramerUp>
     </section>

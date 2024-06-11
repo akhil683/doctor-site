@@ -23,7 +23,7 @@ const DigitalVault = () => {
       </div>
 
       <div className='max-w-[660px]'>
-         <img src={DigitalImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={DigitalImg} loading='lazy' alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
       </div>
     </section>
   )

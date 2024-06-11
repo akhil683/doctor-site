@@ -69,7 +69,7 @@ const Tracker = () => {
       </div>
 
       <div className='md:h-[900px] max-md:w-full'>
-         <img src={healthImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={healthImg} loading='lazy' alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
       </div>
     </section>
   )

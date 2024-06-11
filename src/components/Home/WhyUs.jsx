@@ -98,7 +98,7 @@ const WhyUs = () => {
          <p className='text-orange text-lg'>With [App Name], managing health records is easier and better than ever.</p>
       </div>
       <div className='md:max-h-[400px] max-md:w-full'>
-         <img src={centerImg} alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
+         <img src={centerImg} loading='lazy' alt="Preventive Care Programs" className='h-full w-full object-cover animate-image' />
       </div>
     </section>
   )

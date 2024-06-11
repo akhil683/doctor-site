@@ -22,7 +22,7 @@ const Staff = () => {
          </FramerUp>
       </div>
       <div className='max-w-[600px]'>
-         <img src={img} alt="Health Record Systemj" className='h-full w-full object-cover animate-image' />
+         <img src={img} loading='lazy' alt="Health Record Systemj" className='h-full w-full object-cover animate-image' />
       </div>
       
     </section>

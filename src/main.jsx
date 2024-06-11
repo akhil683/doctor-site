@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import Home from "./pages/Home.jsx"
-import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Features from './pages/Features.jsx'
-import OurClinics from './pages/OurClinics.jsx'
-import Locker from './pages/Locker.jsx'
-import Tracking from './pages/Tracking.jsx'
+import App from './App.jsx'
+import './index.css'
+
+const Home = lazy(() => import('./pages/Home.jsx'))
+const Features = lazy(() => import('./pages/Features.jsx'))
+const OurClinics = lazy(() => import('./pages/OurClinics.jsx'))
+const Locker = lazy(() => import('./pages/Locker.jsx'))
+const Tracking = lazy(() => import('./pages/Tracking.jsx'))
+
+import Loader from "./components/Loader.jsx"
 
 const router = createBrowserRouter([
   {
@@ -16,23 +19,23 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home />,
+        element: <Suspense fallback={<Loader />}><Home /></Suspense>,
       },
       {
         path: "/features",
-        element: <Features />
+        element: <Suspense fallback={<Loader />}><Features /></Suspense>
       },
       {
         path: "/our-clinics",
-        element: <OurClinics />
+        element: <Suspense fallback={<Loader />}><OurClinics /></Suspense>
       },
       {
         path: "/health-tracking",
-        element: <Tracking/>
+        element: <Suspense fallback={<Loader />}><Tracking /></Suspense>
       },
       {
         path: "/locker",
-        element: <Locker />
+        element: <Suspense fallback={<Loader />}><Locker /></Suspense>
       },
     ]
   }
