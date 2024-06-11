@@ -8,7 +8,7 @@ const Tracking = () => {
     <>
       <Hero /> 
       <h3 className='md:text-5xl text-3xl px-4 text-center font-semibold'>Making Health Engaging and Fun !</h3>
-      <p className='mt-6 text-gray text-lg text-center'>Get a Plan that works for you</p>
+      <p className='mt-6 text-gray text-lg text-cenlllkkter'>Get a Plan that works for you</p>
       <TrackingInnovation />
       <GetInTouch />
     </>

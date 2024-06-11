@@ -17,11 +17,26 @@ import LabReport from '../components/Home/LabReport'
 import Finance from '../components/Home/Finance'
 import Staff from '../components/Home/Staff'
 import WhyUs from '../components/Home/WhyUs'
+import Slider from '../components/Slider'
+import hindiPrescription from "../assets/slider/1.png"
+import englishPrescription from "../assets/slider/2.png"
 
 const Home = () => {
   return (
     <>
       <Hero />
+      <h3 className='md:text-5xl text-3xl font-semibold text-center'>Sample Prescription</h3>
+      <p className='text-lg text-gray text-center my-4'>(Move slider left and right to see the magic)</p>
+      <div className='flex justify-around max-md:flex-col px-4 mt-16 mb-24 gap-16'>
+        <div>
+          <p className='md:text-3xl text-xl text-center mb-4'>In <span className='font-semibold'>English</span></p>
+          <Slider imageTwo={englishPrescription} />
+        </div>
+        <div>
+          <p className='md:text-3xl text-xl text-center mb-4'>In <span className='font-semibold'>Hindi</span></p>
+          <Slider imageTwo={hindiPrescription} />
+        </div>
+      </div>
       <Programs />
       <Care />
       <Carousel />
